@@ -11,5 +11,5 @@ int main()
   printf("Sum of %d and %d is %d\n", a, b, c);
 a = c;
 c = 2;
-printf("Sum of %d and %d is %d\n", a, b, c);
+printf("Difference of %d and %d is %d\n", a, b, c);
 }
