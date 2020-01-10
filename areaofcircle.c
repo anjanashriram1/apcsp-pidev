@@ -7,28 +7,15 @@ float areaofcircle(float radius)
 
 }
 
-int  main(int argc, char* argv[])
+int  main()
 {
-if (argc != 3)
+float radius;
+float result;
+for (radius = 3.5; radius<=12.5; radius=radius+1)
+
 {
-	printf("%s: Please input 2 floats\n", argv[0]);
-}
-
-float lowerrange;
-int a = sscanf(argv[1], "%f", &lowerrange);
-if (a != 1)
-{ printf("Is not a float, give two floats\n");}
-
-
-float upperrange;
-a = sscanf(argv[2], "%f", &upperrange);
-if (a != 1)
-{ printf("Is not a float, give two floats\n");}
-
-for (float radius = lowerrange; radius <= upperrange; radius++) 
-{ float result = areaofcircle(radius);
-printf("Area of circle is %f\n", result);
-
+	result = areaofcircle( radius);
+	printf("Area is equal to %f\n", result); 
 }
 
 }
